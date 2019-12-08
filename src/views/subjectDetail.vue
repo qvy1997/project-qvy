@@ -66,7 +66,6 @@ export default {
     })
     this.detailSubjects = dataAxios.data.data
     this.imgTeacher = this.detailSubjects.imageTeacher
-    console.log(this.detailSubjects)
   }
 }
 </script>

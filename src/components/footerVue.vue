@@ -1,7 +1,9 @@
 <template>
-  <div class="wrapper container">
+  <div class="wrapper">
     <div class="columns text-center">
-      <div class="column is-full">&copy;Coppyright is 2018 by QVY</div>
+      <div class="column is-full">
+        <h3>&copy; 2019 Sci-Com Assistant Application Dev. All Right Reserved</h3>
+      </div>
     </div>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="header-logo text-center">
-      <img src="../assets/image/logo.jpg" width="80px" height="80px" alt="logo">
+      <h1>Assistant Application</h1>
     </div>
   </div>
 </template>
