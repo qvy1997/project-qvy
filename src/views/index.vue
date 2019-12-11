@@ -3,7 +3,7 @@
     <div class="columns">
       <div class="column is-3 text-center">
         <div class="logo-side">
-          <img src="../assets/image/logoSide.jpg" width="150px" height="150px" alt="side-logo">
+          <img src="../assets/image/logoSide.jpg" width="185px" height="150px" alt="side-logo">
         </div>
         <div class="class-year">
           <ul class="menu-class">
