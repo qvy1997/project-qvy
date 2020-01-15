@@ -58,7 +58,7 @@ export default {
     this.class = this.$route.query.class
     const dataAxios = await axios({
       method: 'POST',
-      url: 'https://us-central1-backend-qvy.cloudfunctions.net/backendAPI/getToDetailSubject',
+      url: 'https://us-central1-backend-qvy.cloudfunctions.net/backendAPI/getSomeSubject',
       data: {
         codeSubject: this.code,
         student: this.class
