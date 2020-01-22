@@ -48,8 +48,14 @@
   padding-bottom: 35px;
 }
 
-.main {
+.bg-index {
   background-image: url('../image/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.bg-subject {
+  background-image: url('../image/bg-sub.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -65,6 +71,7 @@
 
 .Footer {
   background-color: #28a4f5;
+  overflow: hidden;
 }
 
 .class-year {
@@ -90,13 +97,17 @@ ul.menu-class li {
   position: relative;
 }
 
-.menu-class {
+.menu-class li {
   cursor: pointer;
 }
 
 .background-header {
   background-color: #28a4f5;
   border-bottom: 1px solid #565656;
+}
+
+.questionair a {
+  color: #fff;
 }
 
 .container.Header .wrapper {
@@ -123,4 +134,17 @@ ul.menu-class li {
 
 .subject:nth-child(even) {
   background-color: #f7f7f7;
+}
+
+div#app {
+  font-family: Kanit;
+}
+
+@media (max-width: 415px) {
+  .Footer {
+    padding: 0 15px;
+  }
+  .Footer h3 {
+    font-size: 16px;
+  }
 }

@@ -1,29 +1,34 @@
 <template>
-  <div class="wrapper container">
-    <div class="columns">
-      <div class="column is-3 text-center">
-        <div class="logo-side">
-          <img src="../assets/image/logoSide.jpg" width="185px" height="150px" alt="side-logo">
-        </div>
-        <div class="class-year">
-          <ul class="menu-class">
-            <li @click="selectClass(classStudents.index)" v-for="(classStudents, index) in classStudent"
-            :key="index">
-              {{ classStudents.text }}
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="column is-9 frame-article">
-        <div class="article-content text-center">
-          <h2 class="text-h2">รายวิชาประจำปีการศึกษา</h2>
-          <div class="subject" v-for="(subjects, index) in dataSubject"
-          :key="index">
-            <router-link :to="{ path: linkToDetail(subjects.codeSubject, subjects.classYear) }">
-              {{ subjects.nameSubject }}
-            </router-link>
+  <div class="bg-index">
+    <div class="wrapper container">
+      <div class="columns">
+        <div class="column is-3 text-center">
+          <div class="logo-side">
+            <img src="../assets/image/logoSide.jpg" width="185px" height="150px" alt="side-logo">
+          </div>
+          <div class="class-year">
+            <ul class="menu-class">
+              <li @click="selectClass(classStudents.index)" v-for="(classStudents, index) in classStudent"
+              :key="index">
+                {{ classStudents.text }}
+              </li>
+            </ul>
           </div>
         </div>
+        <div class="column is-9 frame-article">
+          <div class="article-content text-center">
+            <h2 class="text-h2">รายวิชาประจำปีการศึกษา</h2>
+            <div class="subject" v-for="(subjects, index) in dataSubject"
+            :key="index">
+              <router-link :to="{ path: linkToDetail(subjects.codeSubject, subjects.classYear) }">
+                {{ subjects.nameSubject }}
+              </router-link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center questionair">
+        <a href="https://docs.google.com/forms/d/17h396BQPjM--i3kJloZd7SNKUbWdP1J3QZfCGZ3M1IE/edit">แบบสอบถามความพึงพอใจ (Tab Here)</a>
       </div>
     </div>
   </div>

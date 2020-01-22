@@ -5,7 +5,7 @@
         <headerVue />
       </div>
     </div>
-    <div class="main">
+    <div class="mainPage">
       <router-view />
     </div>
     <div class="Footer">
