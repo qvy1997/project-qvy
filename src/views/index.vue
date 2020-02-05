@@ -17,7 +17,7 @@
         </div>
         <div class="column is-9 frame-article">
           <div class="article-content text-center">
-            <h2 class="text-h2">รายวิชาประจำปีการศึกษา</h2>
+            <h2 class="text-h2">รายวิชาประจำปีการศึกษา  {{ yearNumber }}</h2>
             <div class="subject" v-for="(subjects, index) in dataSubject"
             :key="index">
               <router-link :to="{ path: linkToDetail(subjects.codeSubject, subjects.classYear) }">
@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="text-center questionair">
-        <a href="https://docs.google.com/forms/d/17h396BQPjM--i3kJloZd7SNKUbWdP1J3QZfCGZ3M1IE/edit">แบบสอบถามความพึงพอใจ (Tab Here)</a>
+        <a><router-link to="/quesionair">แบบสอบถามความพึงพอใจ (Tab Here)</router-link></a>
       </div>
     </div>
   </div>
@@ -40,6 +40,7 @@ export default {
   data () {
     return {
       dataSubject: [],
+      yearNumber: '1',
       classStudent: [
         {
           text: 'ปีการศึกษาที่ 1',
@@ -73,7 +74,8 @@ export default {
         }
       })
       this.dataSubject = dataAxios.data.dataAll
-      console.log(this.dataSubject)
+      this.yearNumber = dataAxios.data.dataAll[0].classYear
+      this.yearNumber = this.yearNumber.substring(7, 8)
     }
   },
   async mounted () {

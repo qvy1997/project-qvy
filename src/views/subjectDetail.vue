@@ -20,7 +20,7 @@
             <h3> {{ detailSubjects.credit }} </h3>
           </div>
           <div class="note">
-            <p class="title-small">วิชาต่อ</p>
+            <p class="title-small">หมายเหตุ</p>
             <h3> {{ detailSubjects.note }} </h3>
           </div>
         </div>

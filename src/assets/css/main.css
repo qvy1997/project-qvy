@@ -30,6 +30,55 @@
   }
 }
 
+.quesionair.bg-background {
+  background-color: #c7cedb;
+  padding: 35px 0;
+  color: #000;
+}
+
+.buttonQuesion button {
+  background-color: #28a4f5;
+  border: 0;
+  padding: 12px;
+  font-family: kanit;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.block-quesion {
+  margin: 25px 0;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 25px 45px;
+}
+
+.radioButton label.b-radio.radio {
+  margin: 6px 0;
+}
+
+.radioButton .field {
+  display: flex;
+  flex-direction: column;
+}
+
+.block-quesion h3 {
+  margin: 20px 0;
+}
+
+.block-quesion h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.block-quesion h1 {
+  font-size: 32px;
+}
+
+.color-red {
+  color: red;
+}
+
 .page-subject-detail .column-left div,.page-subject-detail .column-right div {
   margin: 35px 0;
 }

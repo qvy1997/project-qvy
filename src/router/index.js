@@ -14,6 +14,11 @@ export default new Router({
       path: '/subject',
       name: 'Subject',
       component: () => import('../views/subjectDetail.vue')
+    },
+    {
+      path: '/quesionair',
+      name: 'Quesionair',
+      component: () => import('../views/quesionair.vue')
     }
   ]
 })
